@@ -1,0 +1,14 @@
+{
+  "name": "phoenix-international",
+  "version": "1.0.0",
+  "description": "Phoenix International - Private Label, Contract Repacking & Export Solutions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
