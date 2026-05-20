@@ -1277,6 +1277,67 @@
       .slide-headline { font-size: 1.7rem; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
       .trust-bar { font-size: 0.6rem; padding: 7px 10px; }
+      .slide1-headline { font-size: 1.9rem; }
+      .slide1-content { padding-left: 20px; padding-right: 20px; }
+    }
+
+    /* ===== SLIDE 1 REDESIGN ===== */
+    .slide1-content {
+      align-items: flex-start;
+      text-align: left;
+      padding-left: clamp(28px, 8vw, 120px);
+      padding-right: clamp(28px, 8vw, 120px);
+    }
+    .slide1-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-variant: small-caps;
+      letter-spacing: 0.12em;
+      color: var(--orange);
+      border: 1px solid rgba(232, 98, 26, 0.45);
+      border-radius: 4px;
+      padding: 6px 14px;
+      margin-bottom: 18px;
+      background: rgba(232, 98, 26, 0.06);
+    }
+    .slide1-pre {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: rgba(255,255,255,0.85);
+      border-left: 3px solid #e8621a;
+      padding-left: 12px;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+    .slide1-headline {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      color: #ffffff;
+      text-shadow: 2px 4px 20px rgba(0,0,0,0.5);
+      line-height: 1.2;
+      margin-bottom: 40px;
+      max-width: 900px;
+    }
+    .india-accent {
+      position: relative;
+      white-space: nowrap;
+    }
+    .india-accent::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #c0392b 0%, #e8621a 60%, #f5a623 100%);
+      border-radius: 2px;
     }
   </style>
 </head>
@@ -1340,9 +1401,10 @@
       <div class="slide active">
         <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1920&q=80');"></div>
         <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <h2 class="slide-headline" style="font-size:clamp(0.95rem, 1.8vw, 1.15rem);">Every Day You Delay,<br>A Competitor Claims Your Market</h2>
-          <p class="slide-sub" style="font-size:clamp(2rem, 5vw, 4rem);">Private Label &amp; Export Solutions from India — Built for Global Brands</p>
+        <div class="slide-content slide1-content">
+          <div class="slide1-badge">🌍 Trusted by Brands in 8+ Countries</div>
+          <p class="slide1-pre">Every Day You Delay,<br>A Competitor Claims Your Market</p>
+          <h2 class="slide1-headline">Private Label &amp; Export Solutions from <span class="india-accent">India</span>.<br>Built for Global Brands.</h2>
           <a href="#contact" class="slide-cta"><i class="fa-solid fa-paper-plane"></i>&nbsp; Claim Your Spot — Get a Quote in 24hrs</a>
         </div>
       </div>

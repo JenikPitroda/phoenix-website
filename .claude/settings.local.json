@@ -3,7 +3,10 @@
     "allow": [
       "Bash(Get-ChildItem -Recurse -Include *.html,*.css,*.js -File)",
       "Bash(Select-Object -ExpandProperty FullName)",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
