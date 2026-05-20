@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Include *.html,*.css,*.js -File)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(git *)"
+    ]
+  }
+}
