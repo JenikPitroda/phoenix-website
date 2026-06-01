@@ -687,7 +687,7 @@
     }
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 0;
       position: relative;
     }
@@ -727,6 +727,16 @@
       font-size: 0.73rem;
       color: rgba(232, 98, 26, 0.55);
       letter-spacing: 0.03em;
+    }
+    .stat-context {
+      font-size: 0.73rem;
+      color: rgba(255, 255, 255, 0.36);
+      font-style: italic;
+      line-height: 1.55;
+      margin-top: 10px;
+      max-width: 180px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* ===== SERVICES ===== */
@@ -1289,6 +1299,68 @@
       .trust-bar { font-size: 0.6rem; padding: 7px 10px; }
     }
 
+    /* ===== EXPORT MARKETS FLAGS ===== */
+    .export-markets {
+      background: var(--black-900);
+      padding: 72px 0;
+      border-bottom: 1px solid rgba(232, 98, 26, 0.12);
+    }
+    .export-markets-header {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .export-markets-header h2 {
+      font-size: clamp(1.4rem, 2.8vw, 2rem);
+      background: var(--fire-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+    .export-markets-tagline {
+      font-size: 0.71rem;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .flags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .flag-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 22px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      min-width: 96px;
+      transition: var(--transition);
+      cursor: default;
+    }
+    .flag-card:hover {
+      border-color: rgba(232, 98, 26, 0.45);
+      background: rgba(232, 98, 26, 0.07);
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.38);
+    }
+    .flag-emoji {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+    .flag-name {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
     /* ===== WHATSAPP FLOATING BUTTON ===== */
     .whatsapp-float {
       position: fixed;
@@ -1483,6 +1555,58 @@
     </div>
   </section>
 
+  <!-- ===== EXPORT MARKETS ===== -->
+  <section class="export-markets">
+    <div class="container">
+      <div class="export-markets-header">
+        <h2>We Export To Markets Including</h2>
+        <p class="export-markets-tagline">FSSAI Licensed &nbsp;&middot;&nbsp; IEC Registered &nbsp;&middot;&nbsp; Export Ready</p>
+      </div>
+      <div class="flags-row">
+        <div class="flag-card reveal">
+          <span class="flag-emoji">🇦🇪</span>
+          <span class="flag-name">UAE</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-1">
+          <span class="flag-emoji">🇬🇧</span>
+          <span class="flag-name">United Kingdom</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-2">
+          <span class="flag-emoji">🇺🇸</span>
+          <span class="flag-name">USA</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-3">
+          <span class="flag-emoji">🇨🇦</span>
+          <span class="flag-name">Canada</span>
+        </div>
+        <div class="flag-card reveal">
+          <span class="flag-emoji">🇦🇺</span>
+          <span class="flag-name">Australia</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-1">
+          <span class="flag-emoji">🇸🇬</span>
+          <span class="flag-name">Singapore</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-2">
+          <span class="flag-emoji">🇩🇪</span>
+          <span class="flag-name">Germany</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-3">
+          <span class="flag-emoji">🇿🇦</span>
+          <span class="flag-name">South Africa</span>
+        </div>
+        <div class="flag-card reveal">
+          <span class="flag-emoji">🇶🇦</span>
+          <span class="flag-name">Qatar</span>
+        </div>
+        <div class="flag-card reveal reveal-delay-1">
+          <span class="flag-emoji">🇲🇾</span>
+          <span class="flag-name">Malaysia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== TESTIMONIAL MARQUEE ===== -->
   <div class="testimonial-strip">
     <div class="marquee-track">
@@ -1598,7 +1722,7 @@
           <br>
           <p>Phoenix International is a dedicated private label manufacturing and contract repacking facility based in Changodar, Ahmedabad — India&rsquo;s heart of food processing and export infrastructure.</p>
           <p>We exist to solve a single problem: helping international food brands, traders and merchant exporters source, process, pack, label and ship premium Indian food products without the friction that derails most supply chains.</p>
-          <p>From our facility at Satyam Industrial Estate, we operate dedicated packing rooms, maintain full batch documentation and coordinate export logistics — so your brand shows up in market exactly as intended, every time.</p>
+          <p>From our facility at Satyam Industrial Estate, we operate dedicated packing units, maintain full batch documentation and coordinate export logistics — so your brand shows up in market exactly as intended, every time.</p>
           <div class="about-highlights">
             <div class="about-highlight">
               <div class="about-highlight-icon"><i class="fa-solid fa-check"></i></div>
@@ -1642,24 +1766,29 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item">
-          <div class="stat-number" data-target="5" data-suffix="">0</div>
-          <div class="stat-label">Dedicated Packing Rooms</div>
-          <div class="stat-sublabel">Segregated &amp; specialised</div>
-        </div>
-        <div class="stat-item">
           <div class="stat-number" data-target="350" data-suffix="+">0</div>
           <div class="stat-label">Products</div>
-          <div class="stat-sublabel">Spices, pulses, flours &amp; more</div>
+          <div class="stat-context">Across 15 categories — more range than most dedicated Indian exporters</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" data-target="100" data-suffix="%">0</div>
-          <div class="stat-label">Batch Records Maintained</div>
-          <div class="stat-sublabel">Full traceability, every batch</div>
+          <div class="stat-number" data-target="5" data-suffix="">0</div>
+          <div class="stat-label">Packing Units</div>
+          <div class="stat-context">More dedicated units than 90% of repacking operations in Ahmedabad</div>
         </div>
         <div class="stat-item">
           <div class="stat-number" data-target="24" data-suffix="hr">0</div>
           <div class="stat-label">Response Guarantee</div>
-          <div class="stat-sublabel">For every inquiry, guaranteed</div>
+          <div class="stat-context">On every inquiry — whether you are in Dubai, London, Toronto or Singapore</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Batch Records</div>
+          <div class="stat-context">Every order documented — weight, seal, label, photo. Shared with you same day.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Categories</div>
+          <div class="stat-context">From whole spices to custom blended masalas — one facility handles it all</div>
         </div>
       </div>
     </div>
@@ -1697,13 +1826,13 @@
         <div class="service-card reveal reveal-delay-1">
           <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
           <h3>Contract Repacking</h3>
-          <p>Bulk to retail, precisely. We repack large-format or loose product into branded retail units — pouches, boxes or jars — to your weight, format and presentation specifications, in dedicated rooms.</p>
+          <p>Bulk to retail, precisely. We repack large-format or loose product into branded retail units — pouches, boxes or jars — to your weight, format and presentation specifications, in dedicated packing units.</p>
           <ul class="service-features">
             <li><i class="fa-solid fa-circle-check"></i> Bulk-to-retail conversion</li>
             <li><i class="fa-solid fa-circle-check"></i> Multiple pack formats and sizes</li>
             <li><i class="fa-solid fa-circle-check"></i> Nitrogen flushing available</li>
             <li><i class="fa-solid fa-circle-check"></i> Strict weight and fill accuracy</li>
-            <li><i class="fa-solid fa-circle-check"></i> Dedicated, segregated packing rooms</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dedicated, segregated packing units</li>
           </ul>
         </div>
         <div class="service-card reveal reveal-delay-2">
@@ -1840,7 +1969,7 @@
         <div class="process-step reveal">
           <div class="step-number">04</div>
           <h3>Production &amp; Repacking</h3>
-          <p>Your order moves to a dedicated packing room. Product is processed, weighed precisely, sealed and labelled under controlled conditions — fully segregated from other products at all times.</p>
+          <p>Your order moves to a dedicated packing unit. Product is processed, weighed precisely, sealed and labelled under controlled conditions — fully segregated from other products at all times.</p>
         </div>
         <div class="process-step reveal reveal-delay-1">
           <div class="step-number">05</div>
@@ -1869,7 +1998,7 @@
           <div class="why-icon"><i class="fa-solid fa-industry"></i></div>
           <div class="why-text">
             <h3>Dedicated Packing Facility</h3>
-            <p>Five segregated packing rooms — no cross-contamination, no compromises. Your product has its own dedicated production environment from day one of production.</p>
+            <p>Five segregated packing units — no cross-contamination, no compromises. Your product has its own dedicated production environment from day one of production.</p>
           </div>
         </div>
         <div class="why-item reveal reveal-delay-1">
